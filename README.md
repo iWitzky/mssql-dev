@@ -22,7 +22,7 @@ Supported file formats:
 2. MS SQL Server Database Backup as a single file in a 7zip archive _(.bak.7z)_  
    _Note:_
       * _Only one database backup may be packed in a 7zip archive!_  
-      * _The 7zip archive must be named like the file of the database backup with the extension **_.7z_**!_  
+      * _The 7zip archive must be named like the file of the database backup with the extension .7z_  
       * _The file of the database backup must be located directly in the 7zip archive without subdirectories!_  
       * _The instructions for point 1 still apply!_
 3. MS SQL Server Database Backup as gzip archive _(.bak.gz)_  
