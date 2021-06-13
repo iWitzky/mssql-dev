@@ -1,0 +1,16 @@
+version: "3.3"
+services: 
+  mssql:
+    image: mssql-dev:2017-CU24-ubuntu-16.04
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 1433:1433
+    environment:
+      - SA_PASSWORD=myStr0ng!Passw0rd
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+#    volumes:
+#      - ./DevDatabase_1.1.bak.gz:/initdb.d/DevDatabase.bak.gz
+#      - ./cleanup.sql:/initdb.d/zz_cleanup.sql
