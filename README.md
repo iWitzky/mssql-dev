@@ -78,10 +78,10 @@ docker-compose commands:
 -----
 
 * Build  
-    `docker-compose build mssql-dev`
+    `docker-compose build mssql`
 
 * Start  
-    `docker-compose up -d mssql-dev`
+    `docker-compose up -d mssql`
 
 * SQLcmd:  
-    `docker-compose exec -it mssql-dev /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<your_password>'`
+    `docker-compose exec mssql /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P '<your_password>'`
